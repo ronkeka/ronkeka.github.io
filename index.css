@@ -155,9 +155,8 @@ fieldset {
     background: white;
 }
 
-/* Mobile Styles für Nothing Phone 2a */
 @media (max-width: 480px) {
-  /* Container ordentlich stapeln */
+  /* Alles in einer Spalte */
   .aboutme-programming-row,
   .education-schnupperlehren-row,
   .references-row,
@@ -168,29 +167,38 @@ fieldset {
     text-align: center;
     gap: 18px;
     padding: 12px;
+    width: 100%;
   }
 
-  /* Bilder füllen die Breite, bleiben scharf */
-  #picture,
+  /* Oberstes Bild quadratisch */
+  #picture {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* macht es quadratisch */
+    object-fit: cover;   /* schneidet, damit es passt */
+    border-radius: 10px;
+  }
+
+  /* Andere Bilder passen sich an */
   #programming,
   #schnupperlehren,
   #references_pic {
     width: 100%;
-    max-width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 
-  /* Texte nicht gequetscht */
+  /* Fieldsets über ganze Breite */
   fieldset {
     width: 100%;
     box-sizing: border-box;
-    padding: 14px;
+    padding: 16px;
+    margin: 0;
     font-size: 15px;
     line-height: 1.4;
+    border-radius: 8px;
   }
 
-  /* Download-Bereich fingerfreundlich */
+  /* Downloads */
   .downloads-flex {
     display: flex;
     flex-direction: column;
@@ -215,7 +223,7 @@ fieldset {
     background: #ddd;
   }
 
-  /* Überschriften anpassen */
+  /* Überschriften */
   h1 {
     font-size: 22px;
     margin-bottom: 10px;
@@ -231,8 +239,8 @@ fieldset {
     margin-bottom: 6px;
   }
 
-  /* Extra: Abstand unten für Scroll-Komfort */
   body {
     padding-bottom: 40px;
   }
 }
+
