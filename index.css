@@ -1,0 +1,156 @@
+#downloads .downloads-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+#downloads .downloads-flex a {
+    flex: 1 1 16%;
+    text-align: center;
+    margin: 0 8px;
+    min-width: 0;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    text-decoration: none;
+    color: black;
+}
+
+.aboutme-programming-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.education-schnupperlehren-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+#about-me {
+    width: 50%;
+}
+
+#education {
+    width: 47%;
+    margin: 0;
+}
+
+#references {
+    width: 50%;
+    margin-top: -34px;
+}
+
+
+#title_picture {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    width: 98.6%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 250px;
+}
+
+
+#title_picture {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #fefefe;
+}
+
+#picture {
+    height: 250px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15%;
+}
+#title_picture #title {
+    margin: 0;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 15%;
+
+}
+
+#titletext {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 15%;
+    display: block;
+    font-size: 80px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#programming {
+    height: 178px;
+    display: block;
+    flex-shrink: 0;
+    margin-left: 350px;
+}
+
+#schnupperlehren {
+    height: 160px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 350px;
+}
+
+.references-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+#references {
+    width: 50%;
+    display: block;
+    margin-right: auto;
+}
+
+#references_pic {
+    height: 250px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 12%;
+    margin-top: -34px;
+}
+
+
+
+body {
+    background: #f7f7f7;
+}
+
+fieldset {
+    background: white;
+}
