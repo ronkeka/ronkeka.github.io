@@ -154,3 +154,54 @@ body {
 fieldset {
     background: white;
 }
+
+/* Mobile view */
+@media (max-width: 768px) {
+  /* Stack rows vertically */
+  .aboutme-programming-row,
+  .education-schnupperlehren-row,
+  .references-row,
+  #title_picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  /* Make images full width */
+  #picture,
+  #programming,
+  #schnupperlehren,
+  #references_pic {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust fieldset width */
+  fieldset {
+    width: 100%;
+  }
+
+  /* Downloads stack cleanly */
+  .downloads-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .downloads-flex a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    background: #f4f4f4;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .downloads-flex a:hover {
+    background: #ddd;
+  }
+}
