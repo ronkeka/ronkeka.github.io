@@ -157,7 +157,7 @@ fieldset {
 
 /* Mobile view */
 @media (max-width: 768px) {
-  /* Stack rows vertically */
+  /* Alles untereinander anordnen */
   .aboutme-programming-row,
   .education-schnupperlehren-row,
   .references-row,
@@ -166,42 +166,55 @@ fieldset {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
+    gap: 20px;
+    padding: 10px;
   }
 
-  /* Make images full width */
+  /* Bilder an Bildschirm anpassen */
   #picture,
   #programming,
   #schnupperlehren,
   #references_pic {
+    width: 100%;
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
   }
 
-  /* Adjust fieldset width */
+  /* Texte nicht gequetscht */
   fieldset {
     width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
   }
 
-  /* Downloads stack cleanly */
+  /* Downloads untereinander und klickbar */
   .downloads-flex {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    width: 100%;
   }
 
   .downloads-flex a {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 12px;
+    padding: 14px;
     background: #f4f4f4;
-    border-radius: 6px;
+    border-radius: 8px;
     text-decoration: none;
     color: black;
+    font-size: 16px;
   }
 
   .downloads-flex a:hover {
     background: #ddd;
+  }
+
+  /* Überschriften etwas kleiner auf Handy */
+  h1, h2, h3 {
+    font-size: 1.4em;
+    line-height: 1.3;
   }
 }
