@@ -120,7 +120,7 @@ body {
     height: 160px;
     display: block;
     flex-shrink: 0;
-    margin-right: 350px;
+    width: 50%
 }
 
 .references-row {
