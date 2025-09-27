@@ -225,7 +225,7 @@ footer a {
     font-weight: bold;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 400px) {
     body {
         background-size: cover;
         padding: 0;
@@ -297,4 +297,5 @@ footer a {
         padding: 8px;
         text-align: center;
     }
+
 }
